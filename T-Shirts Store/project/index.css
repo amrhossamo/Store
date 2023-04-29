@@ -1,0 +1,483 @@
+
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins',sans-serif;
+    font-size: 13px;
+    line-height:  1.6em;
+    font-style: normal;
+    margin: 0px 30px 0px 30px;
+    box-sizing: border-box;
+    height: 100vh;
+    
+} 
+
+
+/* navBar */
+.nav{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+
+/* TohhleBtn Icon */ 
+.nav .toggle_btn{
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: none;
+    
+}
+
+
+/* dropdown_menu */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu li a{
+    text-decoration: none;
+    color: black;
+}
+.dropdown_menu li a:hover{
+   border: solid black 1px;
+    border-radius: 2px;
+    padding: 5px;
+}
+.dropdown_menu.open{
+    height: 240px;
+}
+.dropdown_menu li {
+    padding: 0.7rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list ul{
+    display: flex;  
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    font-size: 13px;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.logo {
+    cursor: pointer;
+    margin-right: 320px;
+}
+.list ul li :hover{
+    background-color: rgba(0, 0, 0, 0.185);
+    
+}
+
+
+
+/* home bage */
+.header-section{
+    display: flex;
+    background-color: rgba(221, 182, 216, 0.315);
+    height: 75vh;
+    margin: center;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+    
+   
+}
+.para h1{
+    font-size: 4.2rem;
+    font-weight:600 ;  
+}
+.para button{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+
+
+.title {
+    margin-top: 85px;
+    text-align: center;
+}
+.title h2{
+    font-size: 36px;
+    font-size: 2.7692307692308rem;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    line-height: 0;
+
+}
+.icons a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 30px;
+
+}
+.icons i {
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+/* products  */
+.images {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left:370px ;
+    margin-top: 5px;   
+}
+.img1{
+    width: 23%;
+    height:400px ;
+}
+.img1:hover{
+    transition: 0.5s;
+    scale: 1.1;
+
+}
+.mainimg{
+    background-color: black;
+    width: 100%;
+    height: 80%;
+}
+.product1{
+    background-image: url(./images/product-06-a.jpg);
+    background-position: center;
+    background-size: cover;  
+}
+.product2{
+    background-image: url(./images/product-09-a.jpg);
+    background-position: center;
+    background-size: cover;  
+}
+.product3{
+    background-image: url(./images/product-10-a.jpg);
+    background-position: center;
+    background-size: cover;  
+}
+.product4{
+    background-image: url(./images/product-08-a.jpg);
+    background-position: center;
+    background-size: cover;  
+}
+.section3{
+    display: flex;
+    justify-content: center;
+    margin-top:100px ;
+ 
+}
+
+
+
+/* collection ideal */
+.right{
+    margin-right: 20px;
+}
+.pm{
+    font-size: 36px;
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.sm{
+    font-size: 36px;
+    font-size:  2.7rem;
+    font-weight: 600;
+    line-height: 0;
+    text-align: center;
+}
+.shopNow{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    margin-left: 200px;
+    
+}
+.background{
+    margin-top: 80px;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    
+}
+
+
+/* NEW collection */
+.bg-image{
+    margin: 50px;
+    background-image: url('./images/bg-01\ \(1\).jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+    position: relative;
+    }
+    
+    .overlay {
+    background-color: rgba(0, 0, 0, 0.432);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    }
+    
+    .content {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    }
+
+.new{
+    color: #ffffff;
+}
+.Be{
+    color: #ffffff;
+    font-size: 36px;
+    font-size:  2.7rem;
+    font-weight: 600; 
+}
+.Find{
+    color: #ffffff;
+    font-size: 25px;
+    font-size:  2rem;
+    font-weight: 500; 
+}
+.shopCall{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-size: 0.9rem;
+    padding-top: 17px;
+    padding-right: 26px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+.div2{
+    height: 800px;
+}
+
+
+
+
+/* spring summer */
+.section5{
+    
+    display: flex;
+    justify-content: center;
+}
+.modletitle{
+    margin-top:200px;
+    margin-left: 50px;
+    text-align: left;
+    width: 40%;
+}
+.ss{
+    font-size: 36px;
+    font-size:  2.7rem;
+    font-weight: 600; 
+}
+
+
+
+
+/* product On sale */
+.sale1{
+    background-image: url(./images/product-01-a.jpg);
+    background-position: center;
+    background-size: cover;  
+}
+.sale2{
+    background-image: url(./images/product-05-a.jpg);
+    background-position: center;
+    background-size: cover;  
+}
+.sale3{
+    background-image: url(./images/product-03-a.jpg);
+    background-position: center;
+    background-size: cover;  
+}
+.sale4{
+    background-image: url(./images/product-08-a.jpg);
+    background-position: center;
+    background-size: cover;  
+}
+
+
+
+
+/* subscribe Btn */
+.subscribe{
+    background-color: rgba(247, 100, 247, 0.144);
+    width: 100%;
+    height: 50vh;
+    margin-top: 10vh;
+    text-align: center;
+    overflow: hidden;
+}
+h4{
+    font-size: 30px;
+    font-size:  2rem;
+    font-weight: 600; 
+}
+.subscribe_btn{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+}
+input{
+    color: black;
+    border: none;
+    border-radius: 2px;
+    width: 50%;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+}
+
+
+
+
+
+
+/* footer */
+.copyright{
+    color: #ffffff;
+    font-size:15px;
+    margin-top:100px ;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+}
+
+
+
+
+@media (max-width: 992px) {
+    .nav .list{
+        display: none;
+    }
+    .nav .toggle_btn{
+        display: block;
+
+    }
+    .dropdown_menu{
+        display: block;
+        
+    }
+
+    .images {
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+
+    }
+
+
+    .img1{
+        width: 45%;
+        margin-bottom: 4rem;
+    }
+
+    .header-section {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .para{
+        margin:3rem 0rem;
+        
+    }
+    .para h1 {
+        font-size: 1.5rem;
+    }
+    .pm , .sm {
+        font-size: 1.5rem;
+    }
+    .new , .Be{
+        font-size: 1.5rem;
+        
+    }
+    .ss , .li{
+        font-size: 1.5rem;
+    }
+
+    .section3 {
+        flex-wrap: wrap;
+
+    }
+
+    .right {
+        margin-bottom: 4rem;
+
+    }
+
+
+    .bg-image {
+        margin:3rem 0rem;
+    }
+
+
+    .section5 {
+        
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+
+    .headerimg{
+        width: 100%;
+    }
+
+
+
+}   
